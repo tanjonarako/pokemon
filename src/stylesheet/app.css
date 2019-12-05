@@ -1,0 +1,27 @@
+.app {
+  max-width: 1024px;
+  max-height: 736px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  background: white;
+  overflow: scroll;
+  position: relative;
+}
+
+.app a, .app a:hover, .app a:active, .app a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+.app ul {
+  padding: 0;
+  list-style: none;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin: 10px 0;
+}

@@ -1,0 +1,40 @@
+@import "./app.css";
+@import "./list.css";
+@import "./item.css";
+@import "./favourite.css";
+
+html, body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+    border: none;
+    cursor : pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+input::placeholder {
+    color:#888;
+}
+
+.row-flex {
+    display: flex;
+
+    .col-flex {
+        flex: 1 1 auto;
+    }
+}
+
+.text-grey {
+    color: #7d7d7d;
+}
