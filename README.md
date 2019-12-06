@@ -33,4 +33,3 @@ It will launch the application in your machine at : http://localhost:3000/)
 * [React](http://reactjs.org/) - The web framework used
 * [Create-react-app](https://github.com/facebookincubator/create-react-app) - Create the app
 * [Bootstrap](https://getbootstrap.com/) - Style
-# pokemon
