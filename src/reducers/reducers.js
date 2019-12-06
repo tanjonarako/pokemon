@@ -59,6 +59,11 @@ const favReducer = (state = [], action) => {
     return index < 0 ? [...state, action.data] : state
   }
 
+  if (action.type === 'removeToFav') {
+    const index = state.indexOf(action.data)
+    return index >= 0 ? state.filter(item => item !== action.data) : state
+  }
+
   if (action.type === 'getFav') {
     var storedId = localStorage['id'] && JSON.parse(localStorage['id'])
     return storedId ? [...state, ...storedId] : state

@@ -1,3 +1,15 @@
 .favourite h1 {
   font-size: 22px;
 }
+
+ul li .fa {
+  color: red;
+}
+
+ul li:hover .fa {
+  visibility: visible;
+}
+
+ul li .fa{
+  visibility: hidden;
+}

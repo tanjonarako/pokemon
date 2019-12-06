@@ -5,6 +5,10 @@ import PropTypes from 'prop-types';
 const mapDispatchToProps = (dispatch) => ({
   getFav: () => dispatch({
     type: "getFav"
+  }),
+  removeFav: (id) => dispatch({
+    type: "removeToFav",
+    data: id
   })
 });
 
@@ -26,7 +30,7 @@ export class Favourite extends Component {
           <h1>Favourite</h1>
           <ul>
             {favourites.map((favouriteId) => {
-              return <li key={favouriteId}>{favouriteId}</li>
+              return <li key={favouriteId}>{favouriteId} <a href="#" onClick={() => this.props.removeFav(favouriteId)}><i className="fa fa-times"></i></a></li>
             })}
           </ul>
           <div className='separator'></div>
