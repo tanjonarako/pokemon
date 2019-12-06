@@ -19,33 +19,18 @@ Clone the repo GIT: git@github.com:tanjonarako/pokemon.git
 Then you have to install the modules
 
 ```
-npm install
+yarn install
 ```
 To launch the application, you have to launch
 
 ```
-npm run start
+yarn start
 ```
 It will launch the application in your machine at : http://localhost:3000/)
-
-## Running the tests
-
-To run the automated tests for this system
-
-```
-npm run test
-```
-And run the option a to run all test
-
-## Demo
-
-You can also run the application with https://tanjonarako.github.io/pokemon/build/index.html
 
 ## Built With
 
 * [React](http://reactjs.org/) - The web framework used
 * [Create-react-app](https://github.com/facebookincubator/create-react-app) - Create the app
 * [Bootstrap](https://getbootstrap.com/) - Style
-* [Jest](https://facebook.github.io/jest/) - Testing the app
-* [Enzyme](http://airbnb.io/enzyme/) - Testing the app
 # pokemon
