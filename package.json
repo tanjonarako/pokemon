@@ -1,52 +1,40 @@
 {
-  "name": "pokemon",
+  "name": "new-pokemon",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@babel/runtime": "^7.7.4",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "babel": "^6.23.0",
     "babel-loader": "8.0.6",
     "babel-preset-react-app": "7.0.0",
     "bootstrap": "^4.0.0",
     "classnames": "^2.2.6",
-    "enzyme": "^3.2.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "enzyme-to-json": "^3.3.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "enzyme-to-json": "^3.4.3",
     "flexboxgrid": "^6.3.1",
     "font-awesome": "^4.7.0",
-    "jest": "24.9.0",
-    "jest-enzyme": "^7.1.2",
+    "jest": "^24.9.0",
     "jquery": "^3.2.1",
     "popper": "^1.0.1",
     "prop-types": "15.7.2",
-    "react": "16.8.6",
-    "react-dom": "16.8.6",
+    "react": "16",
+    "react-dom": "16",
     "react-redux": "7.0.2",
-    "react-scripts": "^3.2.0",
+    "react-scripts": "3.3.0",
     "redux": "4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "deploy": "gh-pages-deploy",
-    "clean-source": "rimraf README.md src webroot package.json"
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "homepage": "https://github.com/tanjonarako/pokemon",
-  "gh-pages-deploy": {
-    "staticpath": "build",
-    "cname": "nope.org",
-    "prep": [
-      "build-sass",
-      "optimize-img"
-    ],
-    "post": [
-      "clean-source"
-    ],
-    "noprompt": false
-  },
-  "resolutions": {
-    "**/@babel/runtime": "7.5.0"
+  "eslintConfig": {
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -60,7 +48,12 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.2"
-  }
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "setupFiles": [
+    "./src/setupTests.js"
+  ]
 }

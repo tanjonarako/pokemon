@@ -1,3 +1,82 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`List should render correctly 1`] = `ShallowWrapper {}`;
+exports[`List should render a list 1`] = `
+<div>
+  <div
+    className="list"
+  >
+    <Connect(Item)
+      id="abc"
+      key="abc"
+    />
+    <Connect(Item)
+      id="def"
+      key="def"
+    />
+  </div>
+  <nav>
+    <ul
+      className="pagination"
+    >
+      <li
+        className="page-item px-0 disabled"
+      >
+        <a
+          className="page-link"
+          href="#"
+          onClick={[Function]}
+        >
+          Previous
+        </a>
+      </li>
+      <li
+        className="page-item disabled"
+      >
+        <a
+          className="page-link"
+          href="#"
+          onClick={[Function]}
+        >
+          Next
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`List should render correctly 1`] = `
+<div>
+  <div
+    className="list"
+  />
+  <nav>
+    <ul
+      className="pagination"
+    >
+      <li
+        className="page-item px-0 disabled"
+      >
+        <a
+          className="page-link"
+          href="#"
+          onClick={[Function]}
+        >
+          Previous
+        </a>
+      </li>
+      <li
+        className="page-item disabled"
+      >
+        <a
+          className="page-link"
+          href="#"
+          onClick={[Function]}
+        >
+          Next
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;

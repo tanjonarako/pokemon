@@ -1,7 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Item should render an item with props 1`] = `
+<div
+  className="item-details col-xs-12 col-sm-4 col-md-4 col-lg-4 px-0 py-2"
+>
+  <a
+    className="item-link"
+    href="#"
+    onClick={[Function]}
+  >
+    <h2
+      className="name"
+    >
+      abc
+    </h2>
+  </a>
+  <div>
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+    >
+      Add to my collection
+    </button>
+  </div>
+</div>
+`;
+
 exports[`Item should render correctly 1`] = `
-"<ContextProvider value={{...}}>
-  <Connect(Item) item={{...}} />
-</ContextProvider>"
+<div
+  className="item-details col-xs-12 col-sm-4 col-md-4 col-lg-4 px-0 py-2"
+>
+  <a
+    className="item-link"
+    href="#"
+    onClick={[Function]}
+  >
+    <h2
+      className="name"
+    />
+  </a>
+  <div>
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+    >
+      Add to my collection
+    </button>
+  </div>
+</div>
 `;
