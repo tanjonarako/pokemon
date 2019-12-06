@@ -9,11 +9,6 @@
   position: relative;
 }
 
-.app a, .app a:hover, .app a:active, .app a:visited{
-  text-decoration: none;
-  color: black;
-}
-
 .app ul {
   padding: 0;
   list-style: none;

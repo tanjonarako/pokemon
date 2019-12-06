@@ -40,10 +40,10 @@ export class Item extends Component {
     const { opened } = this.state
     const itemClick = name => {
       this.toggle()
-      this.props.doFetch(name)
+      this.props.doFetch && this.props.doFetch(name)
     }
     return (
-      <div className='item-details col-xs-12 col-sm-3 col-md-3 col-lg-3 px-0 py-2'>
+      <div className='item-details col-xs-12 col-sm-4 col-md-4 col-lg-4 px-0 py-2'>
         <a href='#' onClick={() => itemClick(name)} className="item-link">
           <h2 className='name'>{name}</h2>
           {opened && <div className='more-info mb-4'>
@@ -65,7 +65,7 @@ export class Item extends Component {
   }
 }
 
-Item.defaultProps = { item: {} }
+Item.defaultProps = { item: {}, doFetch: () => {} }
 
 export default connect(
   (state, props) => ({

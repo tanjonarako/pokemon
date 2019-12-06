@@ -1,10 +1,23 @@
 .item-details {
   min-height: 150px;
-  border: 1px solid;
+  border: 1px solid #ccc;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+.item-details:hover {
+  border: 1px solid #007bff;
+}
+
+.item-details:active, .item-details:visited {
+  border: 1px solid #000;
+}
+
+.item-details a, .item-details a:hover, .item-details a:active, .item-details a:visited {
+  text-decoration: none;
+  color: black;
 }
 
 .item-link {

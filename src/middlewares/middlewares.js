@@ -7,7 +7,11 @@ const middleware = store => next => action => {
           const successAction = {
             type: `${action.type}_SUCCESS`,
             payload: {
-              list: response.results
+              list: response.results,
+              pagination: {
+                next: response.next,
+                previous: response.previous
+              }
             }
           }
           next(successAction)

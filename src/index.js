@@ -12,7 +12,11 @@ import todoMiddlewares from './middlewares/middlewares'
 const initialState = {
   pokemonList: {
     byIds: {},
-    ids: []
+    ids: [],
+    pagination: {
+      next: '',
+      previous: ''
+    }
   },
   favourites: []
 }

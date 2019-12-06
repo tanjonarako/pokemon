@@ -3,5 +3,14 @@
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
-  justify-content: space-between;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.page-item {
+  min-width: 100px;
+  text-align: center;
 }
